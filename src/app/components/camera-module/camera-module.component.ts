@@ -18,6 +18,8 @@ export class CameraModuleComponent implements OnInit {
   // }
 
   ngOnInit(): void {
+    const cameraApp = document.querySelector('#camera')
+    // cameraApp.cameraTest();
     
   }
 
