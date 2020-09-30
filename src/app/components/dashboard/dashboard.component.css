@@ -1,0 +1,87 @@
+#dashboardDiv {
+  /* background-color: #F5F5F5 ; */
+  padding-top: 50px;
+  height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;   
+  align-content: center;
+  text-decoration: none;
+  flex-direction: column;
+  padding-inline-start: 0;
+  /* background-color: #E8E8E8 !important; */
+}
+
+.flex-item{
+  height: 80px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+ul{
+  list-style: none;
+}
+
+.dashboard-card {
+  height: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  border-radius: 6px 12px 12px 6px;
+  cursor: pointer;
+}
+
+.dashboard-card-header {
+  width: 95px;
+  color: white;
+  font-size: 36px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.dashboard-card-body {
+  width: 100%;
+  font-size: 32px;
+  text-align: left;
+  font-weight: 600;
+  align-self: center;
+  border-radius: 0 10px 10px 0;
+  height: 100%;
+  padding-top: 10px;
+  background-color: #F5F5F5 ;
+}
+
+.dashboard-card-body > span {
+  padding-left: 20px;
+}
+
+#cameraCard {
+  border: 2px solid #57C157 ;
+}
+
+#cameraCard > .dashboard-card-header {
+  background-color: #57C157 ;
+}
+
+#cameraCard > .dashboard-card-body {
+  color: #57C157 ;
+  background-color: #F5F5F5;
+}
+#storageCard {
+  border: 2px solid #5133AB ;
+}
+
+#storageCard > .dashboard-card-header {
+  background-color: #5133AB ;
+}
+
+#storageCard > .dashboard-card-body {
+  color: #5133AB ;
+}

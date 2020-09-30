@@ -1,0 +1,124 @@
+#cameraModuleMain {
+  /* padding-top: 50px; */
+  height: 100vh;
+}
+
+
+.utilitiesHeader{
+  background-color: #AC193D;
+  /* border-color: #e75a5a; */
+  color: #ffffff;
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;   
+  flex-direction: row;
+  justify-content:  space-evenly;
+  padding-inline-start: 0;
+  height: 100%;
+}
+
+.flex-item{
+  height: 135px;
+  width: 200px;
+  margin: 20px;
+}
+
+ul{
+  list-style: none;
+}
+
+.card{
+  color: white;
+  height: 100%;
+  border: unset;
+  border-radius: unset;
+}
+
+.card.utility {
+  min-width: unset;
+  width: 100%;
+}
+
+.card.utility > .card-header {
+  border-radius: 25px 25px 0 0 ;
+  background-color: #b4bec7;
+}
+
+.card.utility > .card-body {
+  border-radius:  0 0 25px 25px;
+  background-color: #778899;
+  text-align: center;
+}
+
+.card.utility > .card-body > .card-body-text > i {
+  font-size: 32px;
+}
+
+.card-body-text {
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+#cameraButtonRow {
+  display: flex;
+  justify-content: center;
+}
+
+.controlButton {
+  font-size: 3rem !important;
+  width: 70px;
+  height: 65px;
+  border-radius: 5px !important;
+  margin-left: 15px;
+}
+
+.controlButton > i {
+  vertical-align: top;
+  color: white;
+}
+
+.controlButton.saveButton {
+  background-color: #1976d2;
+  margin-right: 15px;
+}
+
+#cameraDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#cameraApp {
+  width: 500px;
+  margin-bottom: 30px;
+
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 26px;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+a.current {
+  color: #007bff;
+  opacity: 65%;
+}
+
+a.current > i {
+  margin-right: 10px;
+}
+
+a:not([href]):not([tabindex]):focus, 
+a:not([href]):not([tabindex]):hover {
+  color: #007bff;
+  opacity: 65%;
+}

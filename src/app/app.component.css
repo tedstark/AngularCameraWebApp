@@ -8,16 +8,13 @@
 }
 
 .toolbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 60px;
   display: flex;
   align-items: center;
   background-color: #1976d2;
   color: white;
   font-weight: 600;
+  font-size: 28px;
 }
 
 .toolbar img {
@@ -25,14 +22,18 @@
 }
 
 .content {
-  display: flex;
+  /* display: flex;
   margin: 82px auto 32px;
   padding: 0 16px;
   max-width: 960px;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 
+#routerContainer{
+  width: 100%;
+  height: 100vh;
+}
 svg.material-icons {
   height: 24px;
   width: auto;

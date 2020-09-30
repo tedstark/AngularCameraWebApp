@@ -1,0 +1,12 @@
+#previewDiv > video {
+  max-width: -webkit-fill-available;
+}
+
+#fakeVideoElement {
+  width: 500px;
+  height: 375px;
+  background-color: rgb(255 171 0 / 50%);
+  color: white;
+  font-size: 256px;
+  text-align: center;
+}

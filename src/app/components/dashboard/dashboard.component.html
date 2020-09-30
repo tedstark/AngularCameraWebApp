@@ -1,1 +1,26 @@
-<p>dashboard works!</p>
+<div id="dashboardDiv">
+  <div id="dashboardTiles">
+          <ul class="flex-container">
+                  <li routerLink="/camera" routerLinkActive="" class="flex-item">
+                          <div class="dashboard-card" id="cameraCard">
+                                  <div class="dashboard-card-header">
+                                    <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="dashboard-card-body">
+                                          <span>Camera</span>
+                                  </div>
+                          </div>
+                  </li>
+                  <li routerLink="/storage" routerLinkActive="" class="flex-item">
+                          <div class="dashboard-card" id="storageCard">
+                                  <div class="dashboard-card-header">
+                                      <i class="fa fa-archive" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="dashboard-card-body">
+                                          <span>Storage</span>
+                                  </div>
+                          </div>
+                  </li>
+          </ul>
+  </div>
+</div>

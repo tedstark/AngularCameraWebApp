@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StorageInterfaceComponent } from './storage-interface.component';
+import { CameraModuleComponent } from './camera-module.component';
 
-describe('StorageInterfaceComponent', () => {
-  let component: StorageInterfaceComponent;
-  let fixture: ComponentFixture<StorageInterfaceComponent>;
+describe('CameraModuleComponent', () => {
+  let component: CameraModuleComponent;
+  let fixture: ComponentFixture<CameraModuleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StorageInterfaceComponent ]
+      declarations: [ CameraModuleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StorageInterfaceComponent);
+    fixture = TestBed.createComponent(CameraModuleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

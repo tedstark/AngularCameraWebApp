@@ -1,0 +1,35 @@
+<div id="cameraModuleMain">
+
+  <div class="card">
+    <div class="card-header cameraHeader">
+      <div id="navLinks">
+        <a routerLink="/dashboard">
+          <i class="fas fa-home"></i> Dashboard >
+        </a>
+        <a class="current">
+          <i class="fa fa-camera-retro"></i>Camera
+        </a>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <div id="cameraDiv">
+        <div id="cameraApp">
+          <camera-app id="camera"></camera-app>
+        </div>
+      </div>
+      <div id="cameraButtonRow">
+        <button type="button" class="btn btn-success controlButton" >
+          <i class="fas fa-play-circle"></i>
+        </button>
+        <button type="button" class="btn btn-danger controlButton" >
+          <i class="fas fa-stop-circle"></i>
+        </button>
+        <button type="button" class="btn controlButton saveButton" >
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
