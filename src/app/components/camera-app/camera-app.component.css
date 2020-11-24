@@ -2,11 +2,47 @@
   max-width: -webkit-fill-available;
 }
 
-#fakeVideoElement {
-  width: 500px;
-  height: 375px;
-  background-color: rgb(255 171 0 / 50%);
-  color: white;
-  font-size: 256px;
-  text-align: center;
+#cameraButtonRow {
+  display: flex;
+  justify-content: center;
 }
+
+.controlButton {
+  font-size: 3rem !important;
+  width: 70px;
+  height: 65px;
+  border-radius: 5px !important;
+  margin-left: 15px;
+}
+
+.controlButton > i {
+  vertical-align: top;
+  color: white;
+}
+
+.controlButton.saveButton,
+.controlButton.imageButton {
+  background-color: #1976d2;
+}
+
+#previewDiv, #captureDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#cameraPreview {
+  width: 600px;
+  min-height: 330px;
+  margin: 5px 0 20px 0;
+  border: 5px solid #007bff;
+  border-radius: 10px;
+}
+
+#cameraScreenshot {
+  width: 600px;
+  min-height: 330px;
+  margin: 25px 0 20px 0;
+  border: 5px solid #007bff;
+  border-radius: 10px;
+}
+

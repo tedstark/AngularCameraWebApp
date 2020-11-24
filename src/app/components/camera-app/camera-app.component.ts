@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injector } from '@angular/core';
+import { CameraAppService } from '../../services/camera-app.service';
 
 @Component({
   selector: 'camera-app',
@@ -11,7 +12,7 @@ export class CameraAppComponent implements OnInit {
   videoSelect: any;
   selectors: any;
 
-  constructor() { }
+  constructor(public cameraApp: CameraAppService) { }
 
   ngOnInit(): void {
     // navigator.mediaDevices.getUserMedia({ video: true })
@@ -27,9 +28,7 @@ export class CameraAppComponent implements OnInit {
 
   
   showPreview(stream) {
-    console.log("🍪 stream preview:", stream);
     const videoElement = document.querySelector('#video');    
-    console.log("🍪", videoElement);
     (<any>videoElement).srcObject = stream;
     return navigator.mediaDevices.enumerateDevices();
   }
@@ -82,6 +81,15 @@ export class CameraAppComponent implements OnInit {
       .then(this.gotStream)
       .then(this.gotDevices)
       .catch(this.handleError);
+  }
+
+  stopCamera() {
+    console.log("🎆🎆🎆")
+    if ((<any>window).stream) {
+      (<any>window).stream.getTracks().forEach(track => {
+        track.stop();
+      });
+    }
   }
 
 
