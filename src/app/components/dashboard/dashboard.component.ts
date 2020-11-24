@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CameraAppService } from '../../services/camera-app.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public cameraApp: CameraAppService) { }
 
   ngOnInit(): void {
+    console.log("Dashboard 🦄")
+    this.cameraApp.stopCameraStream();
   }
 
 }

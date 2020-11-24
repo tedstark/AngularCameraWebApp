@@ -65,40 +65,6 @@ ul{
   cursor: pointer;
 }
 
-#cameraButtonRow {
-  display: flex;
-  justify-content: center;
-}
-
-.controlButton {
-  font-size: 3rem !important;
-  width: 70px;
-  height: 65px;
-  border-radius: 5px !important;
-  margin-left: 15px;
-}
-
-.controlButton > i {
-  vertical-align: top;
-  color: white;
-}
-
-.controlButton.saveButton {
-  background-color: #1976d2;
-  margin-right: 15px;
-}
-
-#cameraDiv {
-  display: flex;
-  justify-content: center;
-}
-
-#cameraApp {
-  width: 500px;
-  margin-bottom: 30px;
-
-}
-
 a {
   color: #007bff;
   text-decoration: none;
