@@ -1,7 +1,8 @@
-import { Exifr } from 'exifr';
+import exifr  from 'exifr';
 import { Injectable } from '@angular/core';
 import { NgElement, WithProperties } from '@angular/elements';
 import { CameraAppComponent } from '../components/camera-app/camera-app.component';
+import { ImageCapture } from 'image-capture';
 
 @Injectable()
 export class CameraAppService {
@@ -75,13 +76,13 @@ export class CameraAppService {
   showEXIFData(stream) {
     let track = stream.getVideoTracks()[0];
     let imageCapture = new ImageCapture(track);
-    imageCapture.takePhoto().then((blob) => {
+    imageCapture.takePhoto().then(async blob => {
       console.log(blob);
       const newFile = new File([blob], "photo.jpg", { type: "image/jpeg" });
-      const exifr = new Exifr();
+      // const exifr = new Exifr();
       
       // Line 84 Results in src\assets\exifr error 1.jpg in VS Code & src\assets\exifr error 2.jpg in the console
-      exifr.parse('./myimage.jpg').then(output => console.log('Camera:', output.Make, output.Model))
+      exifr.parse(newFile).then(output => console.log('Camera:', output))
       
       // Line 87 Results in src\assets\exifr error 3.jpg in the console.
       // exifr.read(blob).then(exifr.parse).then(output => console.log('Camera:', output.Make, output.Model))

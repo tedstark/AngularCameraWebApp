@@ -11,7 +11,6 @@ export class DashboardComponent implements OnInit {
   constructor(public cameraApp: CameraAppService) { }
 
   ngOnInit(): void {
-    console.log("Dashboard 🦄")
     this.cameraApp.stopCameraStream();
   }
 

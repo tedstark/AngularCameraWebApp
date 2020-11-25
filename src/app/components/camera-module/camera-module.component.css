@@ -3,16 +3,6 @@
   height: 100vh;
 }
 
-
-.utilitiesHeader{
-  background-color: #AC193D;
-  /* border-color: #e75a5a; */
-  color: #ffffff;
-  text-align: left;
-  font-size: 2.5rem;
-}
-
-
 .flex-container {
   display: flex;
   flex-flow: row wrap;   
@@ -66,7 +56,7 @@ ul{
 }
 
 a {
-  color: #007bff;
+  color: #57C157;
   text-decoration: none;
   background-color: transparent;
   font-size: 26px;
@@ -75,7 +65,7 @@ a {
 }
 
 a.current {
-  color: #007bff;
+  color: #57C157;
   opacity: 65%;
 }
 
