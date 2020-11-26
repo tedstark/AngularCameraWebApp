@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CameraAppService } from '../../services/camera-app.service';
+import { CameraService } from '../../services/camera.service';
+import { DataStoreService } from '../../services/data-store.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,10 +9,14 @@ import { CameraAppService } from '../../services/camera-app.service';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(public cameraApp: CameraAppService) { }
+  constructor(
+    private cameraApp: CameraService,
+    private dataStore: DataStoreService
+  ) { }
 
   ngOnInit(): void {
     this.cameraApp.stopCameraStream();
+    this.dataStore.setCameraModalTitle( "Hello Ted");
   }
 
 }

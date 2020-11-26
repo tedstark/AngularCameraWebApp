@@ -1,13 +1,13 @@
 import exifr  from 'exifr';
 import { Injectable } from '@angular/core';
 import { NgElement, WithProperties } from '@angular/elements';
-import { CameraAppComponent } from '../components/camera-app/camera-app.component';
+import { CameraComponent } from '../components/camera/camera.component';
 import { ImageCapture } from 'image-capture';
 
 @Injectable()
-export class CameraAppService {
+export class CameraService {
 
-  cameraElement: NgElement & WithProperties<CameraAppComponent> = document.createElement('camera-app') as any;
+  cameraElement: NgElement & WithProperties<CameraComponent> = document.createElement('camera-app') as any;
 
   constructor(    
   ) {}
@@ -88,7 +88,4 @@ export class CameraAppService {
       // exifr.read(blob).then(exifr.parse).then(output => console.log('Camera:', output.Make, output.Model))
     });
   }
-
-
-
 }

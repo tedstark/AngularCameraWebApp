@@ -1,0 +1,53 @@
+<!-- <div id="cameraSelectDiv" *ngIf="showCameraSelectDiv">
+  <div id="selectDiv">
+    <label for="cameraSelect">Device Camera Selection</label>
+    <select tabindex="1" id="cameraSelect" name="cameraSelect" [(ngModel)]="selectedVideoInput" required style="width: 250px;">
+        <option [ngValue]="9999" disabled selected>-- Select Camera --</option>
+        <option *ngFor="let input of videoInputs" [ngValue]="input">{{input.label}}</option>
+    </select>  
+  </div>
+  
+  <div id="selectButtonRow">
+    <button type="button" class="btn controlButton saveCameraButton" (click)="saveSelectedInput()">
+      <i class="fas fa-save"></i>
+    </button>
+  </div>
+  
+</div>
+
+<div id="cameraPreviewDiv" *ngIf="showCameraPreviewDiv">
+
+  <div id="previewDiv">
+    <video id="cameraStream" playsinline autoplay poster="assets/images/videoloading.png"></video>
+  </div>
+  
+  <div id="cameraButtonRow">
+    <button type="button" class="btn controlButton savePreviewButton" (click)="capturePicturePreview()">
+      <i class="fas fa-image"></i>
+    </button>
+    <button type="button" class="btn controlButton selectCameraButton" (click)="reselectVideoInput()">
+      <i class="fas fa-camera"></i>      
+    </button>
+  </div>
+
+</div>
+
+<div id="picPreviewDiv" [hidden]="!showPicturePreviewDiv">
+
+  <div id="captureDiv">
+    <canvas id="cameraScreenshot"></canvas>
+  </div>
+  
+  <div id="cameraButtonRow">
+    <button type="button" class="btn controlButton savePictureButton" (click)="savePictureToStorage()">
+      <i class="fas fa-save"></i>
+    </button>
+    <button type="button" class="btn controlButton returnCameraButton" (click)="returnToCameraPreview()">
+      <i class="fas fa-redo-alt"></i>     
+    </button>
+  </div>
+
+</div>
+
+ -->
+

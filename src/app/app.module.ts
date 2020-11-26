@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { CameraModuleComponent } from './components/camera-module/camera-module.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { StorageModuleComponent } from './components/storage-module/storage-module.component';
-import { CameraAppComponent } from './components/camera-app/camera-app.component';
-import { CameraAppService } from './services/camera-app.service';
+import { CameraService } from './services/camera.service';
+import { CameraComponent } from './components/camera/camera.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +14,13 @@ import { CameraAppService } from './services/camera-app.service';
     CameraModuleComponent,
     DashboardComponent,
     StorageModuleComponent,
-    CameraAppComponent,
+    CameraComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [CameraAppService],
+  providers: [CameraService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

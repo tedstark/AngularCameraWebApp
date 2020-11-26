@@ -1,7 +1,7 @@
 import { Component, OnInit, Injector } from '@angular/core';
 // import { createCustomElement } from '@angular/elements';
 // import { CameraAppComponent } from '../camera-app/camera-app.component';
-import { CameraAppService } from '../../services/camera-app.service';
+import { CameraService } from '../../services/camera.service';
 
 @Component({
   selector: 'app-camera-module',
@@ -13,7 +13,7 @@ export class CameraModuleComponent implements OnInit {
 
   // constructor() { 
   // }
-  constructor(injector: Injector, public cameraApp: CameraAppService) {
+  constructor(injector: Injector, public cameraApp: CameraService) {
     // if (!customElements.get('camera-app'))  {
     //   const cameraElement = createCustomElement(CameraAppComponent, {injector})
     //   customElements.define('camera-app', cameraElement)

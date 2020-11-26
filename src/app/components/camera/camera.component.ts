@@ -1,18 +1,26 @@
-import { Component, OnInit, Injector } from '@angular/core';
-import { CameraAppService } from '../../services/camera-app.service';
+import { Component, OnInit } from '@angular/core';
+import { CameraService } from '../../services/camera.service';
 
 @Component({
-  selector: 'camera-app',
-  templateUrl: './camera-app.component.html',
-  styleUrls: ['./camera-app.component.css']
+  selector: 'app-camera',
+  templateUrl: './camera.component.html',
+  styleUrls: ['./camera.component.css']
 })
-export class CameraAppComponent implements OnInit {
+export class CameraComponent implements OnInit {
 
   videoElement: any;
   videoSelect: any;
   selectors: any;
+  constraints: {}
+  videoInputs: any;
+  selectedVideoInput = <any>null;
+  selectedCameraCapabilities = <any>null;
+  showCameraSelectDiv =  false;
+  showCameraPreviewDiv = false;
+  showPicturePreviewDiv = false;
+  showPictureSave = false;
 
-  constructor(public cameraApp: CameraAppService) { }
+  constructor(public cameraApp: CameraService) { }
 
   ngOnInit(): void {
     // navigator.mediaDevices.getUserMedia({ video: true })
@@ -91,6 +99,5 @@ export class CameraAppComponent implements OnInit {
       });
     }
   }
-
 
 }
